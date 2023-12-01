@@ -28,7 +28,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     }
 
     // Поиск 2. Обновляем URL
-    replace(`${pathname}?${params.toString}`);
+    replace(`${pathname}?${params.toString()}`);
   }, 300);
 
   return (
