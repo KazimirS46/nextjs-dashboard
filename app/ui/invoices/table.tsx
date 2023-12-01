@@ -11,6 +11,7 @@ export default async function InvoicesTable({
   query: string;
   currentPage: number;
 }) {
+  //Поиск 4. Функция которая возвращает invoices, соответствующие запросу.
   const invoices = await fetchFilteredInvoices(query, currentPage);
 
   return (
